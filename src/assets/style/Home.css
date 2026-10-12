@@ -1,0 +1,308 @@
+.serenova-home {
+  color: #294536;
+  background: #fbfaf5;
+}
+
+.spa-navbar {
+  min-height: 82px;
+  padding: 15px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background: #fbfaf5;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 3px 15px #263d3110;
+}
+
+.spa-logo {
+  color: #294536;
+  font-family: Georgia, serif;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.spa-logo small {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.spa-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.spa-nav-links a {
+  color: #294536;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.spa-nav-links a:hover {
+  color: #a27a45;
+}
+
+.spa-nav-links .spa-book,
+.spa-button {
+  display: inline-block;
+  background: #294f39;
+  color: white;
+  border-radius: 30px;
+  padding: 13px 23px;
+  transition: 0.3s;
+}
+
+.spa-nav-links .spa-book:hover,
+.spa-button:hover {
+  background: #a27a45;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.spa-toggle {
+  display: none;
+  border: none;
+  background: transparent;
+  color: #294536;
+  font-size: 28px;
+}
+
+.spa-hero {
+  min-height: 580px;
+  display: flex;
+  align-items: center;
+  padding: 70px 8%;
+  background:
+    linear-gradient(90deg, #162f23e8 0%, #162f237d 48%, #162f2308 100%),
+    url("https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1800&q=85")
+    center/cover no-repeat;
+}
+
+.spa-hero-content {
+  max-width: 570px;
+  color: white;
+}
+
+.spa-eyebrow {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #a27a45;
+  margin-bottom: 18px;
+}
+
+.spa-hero .spa-eyebrow {
+  color: #e5d0a9;
+}
+
+.spa-hero h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 1.1;
+  margin-bottom: 22px;
+}
+
+.spa-hero-content > p:not(.spa-eyebrow) {
+  max-width: 440px;
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
+
+.spa-button {
+  text-decoration: none;
+}
+
+.spa-welcome {
+  max-width: 800px;
+  margin: auto;
+  padding: 90px 25px;
+  text-align: center;
+}
+
+.spa-welcome h2,
+.spa-section-heading h2,
+.spa-promo h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(30px, 4vw, 43px);
+  margin-bottom: 20px;
+}
+
+.spa-welcome > p:last-child {
+  color: #69766b;
+  line-height: 1.9;
+}
+
+.spa-home-services {
+  padding: 65px 7% 90px;
+  background: #f0f2e8;
+}
+
+.spa-section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.spa-home-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.spa-home-card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px #233b2c12;
+  transition: transform 0.3s;
+}
+
+.spa-home-card:hover {
+  transform: translateY(-8px);
+}
+
+.spa-home-card img {
+  width: 100%;
+  height: 245px;
+  object-fit: cover;
+}
+
+.spa-card-content {
+  padding: 25px;
+}
+
+.spa-card-content h3 {
+  font-family: Georgia, serif;
+  font-size: 23px;
+}
+
+.spa-card-content p {
+  color: #69766b;
+  line-height: 1.8;
+}
+
+.spa-card-content a {
+  color: #456b4f;
+  font-weight: bold;
+}
+
+.spa-promo {
+  margin: 80px 7%;
+  padding: 65px;
+  border-radius: 18px;
+  background:
+    linear-gradient(90deg, #203d2eea, #203d2e80),
+    url("https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=1400&q=80")
+    center/cover;
+  color: white;
+}
+
+.spa-promo h2 {
+  max-width: 600px;
+}
+
+.spa-promo p:not(.spa-eyebrow) {
+  margin-bottom: 25px;
+}
+
+.spa-footer {
+  background: #19372a;
+  color: #f8f6ed;
+  padding: 45px 20px 20px;
+  text-align: center;
+}
+
+.spa-footer h3 {
+  font-family: Georgia, serif;
+  letter-spacing: 3px;
+}
+
+.spa-footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 25px 0;
+}
+
+.spa-footer-links a {
+  color: #f8f6ed;
+}
+
+.spa-copyright {
+  border-top: 1px solid #ffffff25;
+  padding-top: 20px;
+  margin: 0;
+  font-size: 12px;
+  color: #d0d9d0;
+}
+
+@media (max-width: 900px) {
+  .spa-nav-links {
+    gap: 14px;
+  }
+
+  .spa-home-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .spa-navbar {
+    min-height: 72px;
+    flex-wrap: wrap;
+  }
+
+  .spa-toggle {
+    display: block;
+  }
+
+  .spa-nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    padding: 15px 0;
+    gap: 18px;
+  }
+
+  .spa-nav-links.show {
+    display: flex;
+  }
+
+  .spa-nav-links a {
+    padding: 5px 0;
+  }
+
+  .spa-nav-links .spa-book {
+    text-align: center;
+  }
+
+  .spa-hero {
+    min-height: 530px;
+    padding: 55px 7%;
+    background-position: 58% center;
+  }
+
+  .spa-home-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .spa-home-card img {
+    height: 230px;
+  }
+
+  .spa-promo {
+    margin: 45px 5%;
+    padding: 35px 25px;
+  }
+
+  .spa-welcome {
+    padding: 65px 22px;
+  }
+}

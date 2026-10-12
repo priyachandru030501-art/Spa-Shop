@@ -1,0 +1,269 @@
+.package-page {
+  background: #fbfaf5;
+  color: #294536;
+}
+
+.package-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 16px 6%;
+  background: #fbfaf5;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 3px 15px #263d3110;
+}
+
+.package-logo {
+  color: #294536;
+  font: bold 22px Georgia, serif;
+  letter-spacing: 2px;
+}
+
+.package-logo small {
+  display: block;
+  font: 9px Arial, sans-serif;
+  text-align: center;
+}
+
+.package-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.package-nav-links a {
+  color: #294536;
+  font-size: 14px;
+}
+
+.package-nav-links .package-book,
+.package-button {
+  background: #294f39;
+  color: white;
+  border-radius: 25px;
+  padding: 12px 20px;
+}
+
+.package-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #294536;
+}
+
+.package-hero {
+  min-height: 300px;
+  padding: 70px 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  background:
+    linear-gradient(90deg, #19372adf, #19372a54),
+    url("https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=1600&q=85")
+    center/cover;
+}
+
+.package-hero > p {
+  color: #e5d0a9;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.package-hero h1 {
+  font: clamp(38px, 5vw, 58px) Georgia, serif;
+  margin: 12px 0;
+}
+
+.package-hero span {
+  line-height: 1.8;
+}
+
+.package-section {
+  padding: 75px 7% 90px;
+}
+
+.package-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.package-heading p {
+  color: #a27a45;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.package-heading h2 {
+  font: clamp(30px, 4vw, 42px) Georgia, serif;
+}
+
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  align-items: stretch;
+}
+
+.package-card {
+  position: relative;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 28px #233b2c14;
+  transition: transform 0.3s;
+}
+
+.package-card:hover {
+  transform: translateY(-7px);
+}
+
+.package-card.featured {
+  border: 2px solid #a27a45;
+}
+
+.package-card > img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.package-card-content {
+  padding: 25px;
+}
+
+.package-popular {
+  display: inline-block;
+  padding: 6px 10px;
+  margin-bottom: 12px;
+  background: #e9eee2;
+  color: #294f39;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.package-duration {
+  color: #a27a45;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.package-card h3 {
+  font: 25px Georgia, serif;
+  margin: 10px 0 20px;
+}
+
+.package-card ul {
+  padding-left: 0;
+  list-style: none;
+  min-height: 115px;
+}
+
+.package-card li {
+  margin: 12px 0;
+  color: #647268;
+  font-size: 14px;
+}
+
+.package-price {
+  font: bold 30px Georgia, serif;
+  margin: 20px 0;
+}
+
+.package-button {
+  display: inline-block;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.package-button:hover {
+  background: #a27a45;
+  color: white;
+}
+
+.package-note {
+  margin-top: 65px;
+  padding: 40px;
+  text-align: center;
+  border-radius: 15px;
+  background: #eef0e5;
+}
+
+.package-note h3 {
+  font: 30px Georgia, serif;
+}
+
+.package-note p {
+  color: #647268;
+  margin: 15px 0 25px;
+}
+
+.package-footer {
+  background: #19372a;
+  color: white;
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+
+.package-footer h3 {
+  font-family: Georgia, serif;
+  letter-spacing: 3px;
+}
+
+.package-footer div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin: 20px 0;
+}
+
+.package-footer a {
+  color: white;
+}
+
+.package-copy {
+  border-top: 1px solid #ffffff25;
+  padding-top: 18px;
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+@media (max-width: 900px) {
+  .package-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .package-toggle {
+    display: block;
+  }
+
+  .package-nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    padding: 18px 0;
+  }
+
+  .package-nav-links.show {
+    display: flex;
+  }
+
+  .package-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .package-note {
+    padding: 30px 20px;
+  }
+}

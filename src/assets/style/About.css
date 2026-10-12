@@ -1,0 +1,252 @@
+.about-page {
+  background: #fbfaf5;
+  color: #294536;
+}
+
+.about-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 16px 6%;
+  background: #fbfaf5;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 3px 15px #263d3110;
+}
+
+.about-logo {
+  color: #294536;
+  font: bold 22px Georgia, serif;
+  letter-spacing: 2px;
+}
+
+.about-logo small {
+  display: block;
+  text-align: center;
+  font: 9px Arial, sans-serif;
+}
+
+.about-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.about-nav-links a {
+  color: #294536;
+  font-size: 14px;
+}
+
+.about-nav-links .about-book,
+.about-button {
+  display: inline-block;
+  background: #294f39;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 25px;
+}
+
+.about-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #294536;
+}
+
+.about-hero {
+  padding: 95px 8%;
+  color: white;
+  background:
+    linear-gradient(90deg, #19372ae8, #19372a50),
+    url("https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=1600&q=85")
+    center/cover;
+}
+
+.about-hero > p {
+  color: #e5d0a9;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.about-hero h1 {
+  font: clamp(38px, 5vw, 58px) Georgia, serif;
+  margin: 15px 0;
+}
+
+.about-hero span {
+  line-height: 1.8;
+}
+
+.about-story {
+  padding: 85px 7%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+.about-story-image img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.about-eyebrow {
+  color: #a27a45;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.about-story-content h2,
+.about-section-heading h2 {
+  font: clamp(30px, 4vw, 42px) Georgia, serif;
+  margin: 18px 0 25px;
+}
+
+.about-story-content > p:not(.about-eyebrow) {
+  color: #667469;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+.about-button {
+  margin-top: 12px;
+}
+
+.about-button:hover {
+  color: white;
+  background: #a27a45;
+}
+
+.about-values {
+  padding: 75px 7% 90px;
+  background: #eef0e5;
+}
+
+.about-section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-value-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.about-value-grid article {
+  padding: 35px 25px;
+  background: #fbfaf5;
+  text-align: center;
+  border-radius: 14px;
+}
+
+.about-value-grid article > span {
+  display: inline-grid;
+  place-items: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #dce5d5;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.about-value-grid h3 {
+  font: 25px Georgia, serif;
+}
+
+.about-value-grid p {
+  color: #667469;
+  line-height: 1.8;
+}
+
+.about-quote {
+  margin: 75px 7%;
+  padding: 60px 25px;
+  text-align: center;
+  border-radius: 15px;
+  background:
+    linear-gradient(#19372acb, #19372acb),
+    url("https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&w=1400&q=85")
+    center/cover;
+  color: white;
+}
+
+.about-quote p {
+  font: clamp(25px, 4vw, 38px) Georgia, serif;
+  margin-bottom: 25px;
+}
+
+.about-footer {
+  padding: 40px 20px 20px;
+  text-align: center;
+  color: white;
+  background: #19372a;
+}
+
+.about-footer h3 {
+  font-family: Georgia, serif;
+  letter-spacing: 3px;
+}
+
+.about-footer div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin: 20px 0;
+}
+
+.about-footer a {
+  color: white;
+}
+
+.about-copy {
+  border-top: 1px solid #ffffff25;
+  padding-top: 18px;
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+@media (max-width: 800px) {
+  .about-story {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .about-value-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-story-image img {
+    height: 330px;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-toggle {
+    display: block;
+  }
+
+  .about-nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    padding: 18px 0;
+  }
+
+  .about-nav-links.show {
+    display: flex;
+  }
+
+  .about-quote {
+    margin: 45px 5%;
+  }
+}
